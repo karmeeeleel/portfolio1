@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl-Pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<script>
+
+    function checkScrollDirection() {
+      var lastScrollTop = 0;
+  
+      window.addEventListener("scroll", function () {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+        if (scrollTop > lastScrollTop) {
+          
+          document.querySelector("nav").classList.add("hidden");
+        } else {
+        
+          document.querySelector("nav").classList.remove("hidden");
+        }
+  
+        lastScrollTop = scrollTop;
+      });
+    }
+  
+
+    window.onload = function () {
+      checkScrollDirection();
+    };
+  </script>
+  
+    <head>
+    <body>
+        <nav class="menu-container">
+            <div class="flex-container">
+                <div class="logo">
+                    <h1>Logo.</h1>
+                </div>
+                <div class="references">
+                    <a href="#">Home</a>
+                    <a href="#section1">About</a>
+                    <a href="#section2">Skills</a>
+                    <a href="#section3">Contact</a>
+
+                   
+                </div>
+            </div>
+        </nav>
+    <div class="container">
+        <section>
+            <div class="section">
+                <div>
+                    <h1>Hi, It's me<span > <br>I'm <span style="color:#00E8F8">Mark</span> </span></h1><br>
+                    <p class="informative-paragraph">I love programming and I'm pretty good at it. <br> Programming is a passion that drives me <br> to create and innovate, <br> turning ideas into functional and meaningful solutions.</p>
+                <div class="social">
+                    <a><i class="icon-snapchat-ghost"></i></a>
+                    <a><i class="icon-instagram"></i></a>
+                    <a><i class="icon-twitter"></i></a>
+                    <a><i class="icon-facebook-squared"></i></a>
+                </div>
+                </div>
+                <div class="photo">
+                    <img src="img/human.jpg" alt="programist"/>
+                </div>
+            </div>
+        </section>
+        <section id="section1" class="about">  
+            <div class="photoone"> 
+                <img src="img/nigger.png" alt="nigger">
+            </div>
+            <div class="informative-paragraph">
+                <h1>About <span style="color:#00E8F8">Me</span></h1><br>
+                <p>Hi, I'm Mark, a 25-year-old who loves adventures,<br> extreme sports, <br> and programming.<br> Traveling, extreme sports like surfing and diving,<br> and coding bring passion and excitement into my life!</p>
+                <br>
+            <div class="social1">
+               <a><i class="icon-mail"></i> zielonekalaruchy@onet.pl</a>
+            </div>
+            </div>
+        </section>
+        <section id="section2" class="skills-container">
+           <div class="heading" > 
+                <h1>My <span style="color:#00E8F8">Skills</span></h1>
+            <div>
+            <div class="skills-div">
+                <p> As a programmer, I possess diverse skills, including proficiency  in multiple languages <br>(Python, JavaScript, Java, C++, Ruby), web development (HTML, CSS, JavaScript, backend frameworks),<br> database management (MySQL, PostgreSQL, MongoDB), OOP concepts,<br> problem-solving, algorithms, version control (Git),<br> security awareness, and a commitment to continuous learning.</p><br>
+            </div>
+            <div class="languages-skills-container">
+                <div class="languages-skills">
+                    <img src="icons/c-sharp.png" alt="c#">
+                    <progress value="80" max="100"></progress> 
+                </div> 
+                <br>
+                <div class="languages-skills">
+                    <img src="icons/c-.png" alt="c++">
+                    <progress value="70" max="100"></progress> 
+                </div> 
+                <br>
+                <div class="languages-skills">
+                    <img src="icons/html-5.png" alt="html">
+                    <progress value="100" max="100"></progress> 
+                </div> 
+                <br>
+                <div class="languages-skills">
+                    <img src="icons/css-3.png" alt="css">
+                    <progress value="100" max="100"></progress> 
+                </div> 
+                <br>
+                <div class="languages-skills">
+                    <img src="icons/python.png" alt="python">
+                    <progress value="75" max="100"></progress> 
+                </div> 
+                <br>
+                <div class="languages-skills">
+                    <img src="icons/java.png" alt="java">
+                    <progress value="95" max="100"></progress> 
+                </div> 
+            </div>
+        </section>
+        <section id="section3">
+            <div class="heading">
+                <h1>Leave <span style="color:#00E8F8" >Message</span></h1>
+                <form action="send_form.php" method="post">
+                    <input  type="text" placeholder="First name" required>
+                    <input  type="text" placeholder="Last name" required><br>
+                    <input  type="email" placeholder="Email" required>
+                    <input  type="tel" placeholder="Phone No"><br>
+                    <textarea placeholder="Write Message" required></textarea>><br>
+
+                    <button class="send">SEND</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>Copyright &copy;2023  All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+     
+    </body>
+</html>
